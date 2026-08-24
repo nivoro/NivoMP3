@@ -1,0 +1,14 @@
+*.py
+__pycache__/
+*.pyc
+*.build/
+*.dist/
+*.onefile-build/
+*.cmd
+*.bin
+Nivo_Downloads/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
