@@ -2,7 +2,7 @@
 
 Standalone Windows command-line audio extractor and converter for Spotify and YouTube links.
 
-Nivo MP3 is currently distributed as a standalone Windows executable compiled with Nuitka. No external Python or FFmpeg installation is required to run the released binary.
+Nivo MP3 is currently distributed as a standalone Windows executable compiled with Pyinstaller. No external Python or FFmpeg installation is required to run the released binary.
 
 ```text
   ███╗   ██╗  ██╗  ██╗   ██╗  ██████╗    ███╗   ███╗  ██████╗  ██████╗ 
@@ -18,7 +18,7 @@ Nivo MP3 is currently distributed as a standalone Windows executable compiled wi
 
 Nivo MP3 is a portable terminal utility designed to fetch and convert audio tracks from YouTube and Spotify into standard MP3 format.
 
-The project is currently distributed as a standalone Windows executable compiled with Nuitka. The released binary does not require a separate Python or FFmpeg installation.
+The project is currently distributed as a standalone Windows executable compiled with Pyinstaller. The released binary does not require a separate Python or FFmpeg installation.
 
 The source code is currently not included in this repository.
 
@@ -66,7 +66,7 @@ Download the latest standalone Windows executable from the Releases section.
 
 >> SYSTEM NOTICES
 
-Because the binary is compiled with Nuitka and is not distributed with a commercial code-signing certificate, Windows Defender or SmartScreen may display an alert such as:
+Because the binary is compiled with Pyinstaller and is not distributed with a commercial code-signing certificate, Windows Defender or SmartScreen may display an alert such as:
 
 "Windows protected your PC"
 
