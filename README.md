@@ -42,32 +42,18 @@ git clone https://github.com/your-username/nivo-mp3.git
 cd nivo-mp3
 ```
 
-### 2. Install dependencies
+### 2. Run start.bat
 
-```bash
-pip install -r requirements.txt
-```
+Double-click `start.bat` - it will:
+- Check if Python is installed
+- Install dependencies automatically
+- Start the script
 
-### 3. Run it
-
-```bash
-python main.py
-```
-
-## Build EXE (optional, Windows only)
-
-If you want a standalone .exe file:
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --name "Nivo-MP3" main.py
-```
-
-The EXE will be in `dist/`.
+That's it.
 
 ## How to use
 
-1. Run `python main.py`
+1. Run `start.bat`
 2. Paste a Spotify or YouTube link
 3. Choose bitrate (1-5)
 4. MP3 appears in `Nivo_Downloads/`
