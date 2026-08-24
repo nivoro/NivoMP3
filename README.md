@@ -31,16 +31,9 @@ Paste a link, pick quality, done.
 **You need Python 3.8 or higher.**  
 Download it here: [python.org/downloads](https://www.python.org/downloads/)
 
-### 1. Get the files
+### 1. Download the ZIP
 
-**Download as ZIP:**  
-Click "Code" → "Download ZIP" → extract.
-
-**Or clone:**
-```bash
-git clone https://github.com/your-username/nivo-mp3.git
-cd nivo-mp3
-```
+Click the **"Code"** button above → **"Download ZIP"** → extract the folder anywhere.
 
 ### 2. Run start.bat
 
