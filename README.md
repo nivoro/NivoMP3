@@ -37,8 +37,14 @@ The project is fully open-source and can either be executed directly via Python 
 - Python 3.8 or higher
 - `pip` (Python package manager)
 
-### 1. Clone Repository
+### 1. Download the Project
 
+**Option A: Download as ZIP (Easiest)**
+1. Go to the [GitHub repository](https://github.com/your-username/nivo-mp3)
+2. Click the **"Code"** button → **"Download ZIP"**
+3. Extract the ZIP file to a folder of your choice
+
+**Option B: Clone with Git**
 ```bash
 git clone https://github.com/your-username/nivo-mp3.git
 cd nivo-mp3
@@ -46,8 +52,15 @@ cd nivo-mp3
 
 ### 2. Install Dependencies
 
+Open a terminal/command prompt in the project folder and run:
+
 ```bash
 pip install -r requirements.txt
+```
+
+Or install manually:
+```bash
+pip install yt-dlp imageio-ffmpeg
 ```
 
 ### 3. Run the Script
