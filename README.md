@@ -54,7 +54,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Build EXE (Windows only)
+## Build EXE (optional, Windows only)
+
+If you want a standalone .exe file:
 
 ```bash
 pip install pyinstaller
@@ -65,15 +67,10 @@ The EXE will be in `dist/`.
 
 ## How to use
 
-1. Run `python main.py` (or launch the EXE)
+1. Run `python main.py`
 2. Paste a Spotify or YouTube link
 3. Choose bitrate (1-5)
 4. MP3 appears in `Nivo_Downloads/`
-
-## Windows EXE warning
-
-SmartScreen might show a warning because the EXE isn't signed.  
-Click "More info" → "Run anyway".
 
 ## Disclaimer
 
