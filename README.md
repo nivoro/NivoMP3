@@ -1,8 +1,6 @@
 # NIVO MP3 [SP/YT]
 
-Standalone Windows command-line audio extractor and converter for Spotify and YouTube links.
-
-Nivo MP3 is currently distributed as a standalone Windows executable compiled with Pyinstaller. No external Python or FFmpeg installation is required to run the released binary.
+Open-source command-line audio extractor and converter for Spotify and YouTube links.
 
 ```text
   ███╗   ██╗  ██╗  ██╗   ██╗  ██████╗    ███╗   ███╗  ██████╗  ██████╗ 
@@ -11,79 +9,92 @@ Nivo MP3 is currently distributed as a standalone Windows executable compiled wi
   ██║╚██╗██║  ██║  ╚██╗ ██╔╝ ██║   ██║   ██║╚██╔╝██║  ██╔═══╝   ╚═══██╗
   ██║ ╚████║  ██║   ╚████╔╝  ╚██████╔╝   ██║ ╚═╝ ██║  ██║      ██████╔╝
   ╚═╝  ╚═══╝  ╚═╝    ╚═══╝    ╚═════╝    ╚═╝     ╚═╝  ╚═╝      ╚═════╝ 
+```
 
+```text
   >> nivo mp3 [sp/yt] <<
+```
 
->> OVERVIEW
+## 📌 Overview
 
-Nivo MP3 is a portable terminal utility designed to fetch and convert audio tracks from YouTube and Spotify into standard MP3 format.
+Nivo MP3 is a lightweight Python terminal utility designed to fetch and convert audio tracks from YouTube and Spotify into standard MP3 format.
 
-The project is currently distributed as a standalone Windows executable compiled with Pyinstaller. The released binary does not require a separate Python or FFmpeg installation.
+The project is fully open-source and can either be executed directly via Python or compiled into a standalone Windows executable.
 
-The source code is currently not included in this repository.
+## ✨ Features
 
-I plan to release the source code once the project has reached a certain level of traction and the project has grown further.
+- **YouTube Support**: Direct audio extraction from YouTube video links.
+- **Spotify Support**: Resolves Spotify track metadata via oEmbed and fetches matching audio.
+- **No External FFmpeg Setup**: Uses `imageio-ffmpeg` to automatically manage the FFmpeg binary.
+- **Bitrate Presets**: Configurable quality presets (128, 192, 256, 320 kbps) or custom values.
+- **Automatic Output**: Saves converted `.mp3` files directly into a local `Nivo_Downloads/` folder.
+- **Interactive CLI**: Terminal UI featuring animated status indicators and color-coded logging.
 
->> FEATURES
+## 🚀 Installation & Running from Source
 
-    [YouTube] Supports YouTube links.
+### Prerequisites
 
-    [Spotify] Supports Spotify track URLs.
+- Python 3.8 or higher
+- `pip` (Python package manager)
 
-    [Zero Dependencies] The released executable does not require a separate Python or FFmpeg installation.
+### 1. Clone Repository
 
-    [Bitrate Presets] Configurable bitrates: 128, 192, 256, 320 kbps, or custom values.
+```bash
+git clone https://github.com/your-username/nivo-mp3.git
+cd nivo-mp3
+```
 
-    [Directory Management] Automatically outputs audio files into a local Nivo_Downloads/ folder.
+### 2. Install Dependencies
 
-    [Terminal UI] Interactive command-line interface with progress indicators.
+```bash
+pip install -r requirements.txt
+```
 
->> DOWNLOAD
+### 3. Run the Script
 
-Download the latest standalone Windows executable from the Releases section.
+```bash
+python main.py
+```
 
--> Download Latest Binary (.exe)
+## 🏗️ Building Standalone Executable (.exe)
 
->> USAGE
+To bundle the application into a single standalone `.exe` without requiring Python on target systems:
 
-    Download Nivo-MP3.exe from the Releases section.
+```bash
+pip install pyinstaller
+pyinstaller --onefile --name "Nivo-MP3" main.py
+```
 
-    Launch the application through Command Prompt, PowerShell, or by double-clicking the executable.
+The compiled binary will be placed inside the `dist/` directory.
 
-    Paste a Spotify or YouTube URL.
+## 📖 Usage
 
-    Select the target bitrate.
+1. Start the script via `python main.py` (or launch the compiled `.exe`).
+2. Paste a valid Spotify or YouTube track URL.
+3. Select your target audio bitrate (1–5).
+4. Completed files will appear automatically inside `Nivo_Downloads/`.
 
-    Converted MP3 tracks will be stored in the Nivo_Downloads/ folder.
+## 💻 System Requirements
 
->> SYSTEM REQUIREMENTS
+- **OS**: Windows 10/11, Linux, or macOS (Python script is cross-platform)
+- **Internet**: Active connection required for metadata resolution and audio stream fetching
 
-    Windows 10 or later
+## ⚠️ System Notices (Compiled Binary Only)
 
-    No Python installation required
+If running as a PyInstaller-compiled binary without a commercial code-signing certificate, Windows SmartScreen may trigger a warning:
 
-    No separate FFmpeg installation required
+> *"Windows protected your PC"*
 
->> SYSTEM NOTICES
+To proceed, click **More info** → **Run anyway**.
 
-Because the binary is compiled with Pyinstaller and is not distributed with a commercial code-signing certificate, Windows Defender or SmartScreen may display an alert such as:
+## 🔒 Security
 
-"Windows protected your PC"
+For security guidelines, please refer to [SECURITY.md](SECURITY.md).
 
-If this happens, verify that you downloaded the executable from the official project release before choosing:
+## 📜 Disclaimer
 
-    More info -> Run anyway
+This utility is distributed for educational and personal use only. Users are responsible for complying with intellectual property rights, local laws, and the terms of service of upstream platforms (YouTube, Spotify). The author does not endorse or encourage copyright infringement.
 
->> SOURCE CODE
+## 👨‍💻 Author
 
-The source code is currently not publicly available.
-
-The project is being released initially as a standalone executable. Once Nivo MP3 reaches a certain level of traction and development progress, the source code is planned to be published publicly.
-
->> DISCLAIMER
-
-This utility is distributed for educational and personal use.
-
-Users are responsible for complying with the intellectual property rights, applicable laws, and terms of service of YouTube, Spotify, and any other upstream platform.
-
-The developer does not encourage copyright infringement or unauthorized downloading of copyrighted material.
+Made by **nivoro** (Discord: jahudipic)
