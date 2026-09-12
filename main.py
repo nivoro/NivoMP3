@@ -18,7 +18,7 @@ RST = "\033[0m"
 GRN = "\033[92m"
 RD = "\033[91m"
 
-# made by nivoro (dc: jahudipic)
+# made by nivoro (dc: nivo027)
 
 def nivo_clear():
     os.system("cls" if os.name == "nt" else "clear")
